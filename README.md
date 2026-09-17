@@ -15,18 +15,29 @@ The implementation is maintained in a private team repository.
 
 ## My contribution
 
-My work focused on exploratory data analysis, data preparation, and
-baseline modelling:
+I developed the exploratory analysis and baseline pipelines in
+`notebook_filippo.ipynb`, together with most of the modelling experiments
+in `1_models_and_add_analysis.ipynb`.
 
-- Investigating missing values, inconsistent formatting, and feature
-  distributions.
-- Cleaning article text, titles, publisher information, and timestamps.
-- Building TF-IDF representations of titles and articles, experimenting
-  with separate and combined text features.
-- Exploring dimensionality reduction with Truncated SVD and incorporating
-  publisher and date features.
-- Developing and tuning random-forest baselines, inspecting classification
-  reports and confusion matrices, and preparing prediction exports.
+My work included:
+
+- **Data exploration and cleaning:** investigating missing values,
+  feature distributions, and formatting inconsistencies in article text,
+  titles, sources, and timestamps.
+- **Feature engineering:** building separate and combined TF-IDF
+  representations of titles and articles, incorporating metadata,
+  and exploring dimensionality reduction with Truncated SVD.
+- **Baseline modelling:** developing and tuning random-forest classifiers.
+- **Model experimentation:** exploring linear SVMs, Complement Naive
+  Bayes, hashing with SGD, and an ensemble combining word-level,
+  character-level, and hashing-based models.
+- **Embedding and neural approaches:** experimenting with pretrained
+  MiniLM embeddings, TF-IDF-weighted Word2Vec representations, and
+  a small embedding-based neural network.
+- **Evaluation and interpretation:** comparing approaches using
+  cross-validation and holdout macro F1, inspecting classification
+  reports and confusion matrices, and exploring word clouds,
+  SVD projections, and clustering.
 
 ## Approach and results
 
